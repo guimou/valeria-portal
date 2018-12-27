@@ -1,11 +1,9 @@
 {
-    "name": "@ulaval/modul-typescript-template",
+    "name": "valeriaportal2",
     "version": "0.0.1",
-    "description": "A Vue.js template for typescript provided by Université Laval",
+    "description": "PatternFly Portal for Valeria",
     "contributors": [
-        "Charles Maheu <charles.maheu@dti.ulaval.ca>",
-        "Martin Simard <martin.simard@dti.ulaval.ca>",
-        "Frédéric Poliquin <frederic.poliquin@dti.ulaval.ca>"
+        "Guillaume Moutier <guillaume.moutier@gmail.com>"
     ],
     "private": true,
     "scripts": {
