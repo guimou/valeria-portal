@@ -8,10 +8,13 @@ const messages: BundleMessagesMap = {
         'cancel': 'Annuler'
     },
     'welcome': {
-        'modul': 'modul',
-        'tagline': 'Une expérience unifiée',
+        'valeria': 'valeria',
+        'tagline': 'votre science des données',
         'welcome': 'Bienvenue',
         'intro': 'Pour personnaliser ce projet, consulter la documentation du projet <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli</a>.'
+    },
+    'about': {
+        'about': 'Valeria est un projet de l\'Université Laval'
     },
     'todolist': {
         'welcome': 'Gestion des tâches à faire',
