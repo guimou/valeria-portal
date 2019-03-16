@@ -1,6 +1,6 @@
 #!/bin/bash
 
-tag=s2i-build/patternfly-ng-seed
+tag=s2i-build/valeriaportal
 
 if [[ "$1" = "local" ]] ; then
   port=4200

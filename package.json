@@ -1,19 +1,19 @@
 {
-    "name": "patternfly-ng-seed",
-    "description": "patternfly-ng seed project based on angular-cli scaffolding",
-    "author": "Mike Echevarria <mechevar@redhat.com>",
-    "version": "2.1.0",
-    "license": "MIT",
+    "name": "valeria_portal",
+    "description": "valeria portal based on patternfly-ng (angular implementation)",
+    "author": "Guillaume Moutier <guillaume.moutier@gmail.com>",
+    "version": "0.0.1",
+    "license": "Apache 2.0",
     "repository": {
         "type": "git",
-        "url": "https://github.com/mechevarria/patternfly-ng-seed.git"
+        "url": "https://github.com/guimou/valeriaportal2.git"
     },
     "ng": "node_modules/@angular/cli/bin/ng",
     "scripts": {
         "local": "ng serve --open --host 0.0.0.0 --proxy-config proxy.json",
-        "build": "$npm_package_ng build --delete-output-path --prod",
-        "buildDev": "$npm_package_ng build --watch",
-        "lint": "$npm_package_ng lint",
+        "build": "ng --delete-output-path --prod",
+        "buildDev": "ng build --watch",
+        "lint": "ng lint",
         "start": "node server.js proxy.json",
         "startDev": "node server.js proxy.json 4200"
     },
