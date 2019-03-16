@@ -3,7 +3,7 @@
     "description": "valeria portal based on patternfly-ng (angular implementation)",
     "author": "Guillaume Moutier <guillaume.moutier@gmail.com>",
     "version": "0.0.1",
-    "license": "Apache 2.0",
+    "license": "Apache-2.0",
     "repository": {
         "type": "git",
         "url": "https://github.com/guimou/valeriaportal2.git"
@@ -18,7 +18,7 @@
         "startDev": "node server.js proxy.json 4200"
     },
     "dependencies": {
-        "@angular-devkit/build-angular": "^0.7.5",
+        "@angular-devkit/build-angular": "^0.13.6",
         "@angular/animations": "^6.1.10",
         "@angular/cli": "^6.2.9",
         "@angular/common": "^6.1.10",
@@ -38,6 +38,7 @@
         "core-js": "^2.6.5",
         "express": "^4.16.4",
         "http-proxy-middleware": "^0.18.0",
+        "keycloak-angular": "^4.0.2",
         "morgan": "^1.9.1",
         "ngx-bootstrap": "~3.0.1",
         "npm-sort": "0.0.4",
@@ -49,7 +50,5 @@
         "typescript": "~2.9.2",
         "zone.js": "^0.8.29"
     },
-    "devDependencies": {
-        "cross-env": "^5.2.0"
-    }
+    "devDependencies": {}
 }
