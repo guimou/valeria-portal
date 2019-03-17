@@ -1,0 +1,8 @@
+::ng-deep .nav-pf-vertical {
+    background-image: url('../../assets/img/UL.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 10px calc(100% - 10px);
+    background-size: 120px;
+    background-origin: content-box;
+}
