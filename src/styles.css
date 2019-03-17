@@ -31,8 +31,8 @@ html {
 
 /* copied from patternfly.css to style ngx-breadcrumbs */
 .breadcrumbs__container {
-  padding: 15px 8px 15px 0;
-  margin-bottom: 20px;
+  padding: 8px 4px 8px 0;
+  margin-bottom: 10px;
   list-style: none;
   background-color: transparent;
   border-radius: 1px;
