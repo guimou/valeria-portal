@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 import { AppAuthGuard } from './app.authguard';
-import { CardComponent } from './card/card.component';
+import { ApplicationsComponent } from './applications/applications.component';
 import { HomeComponent } from './home/home.component';
 import { LandingComponent } from './landing/landing.component';
 import { TableComponent } from './table/table.component';
@@ -20,11 +20,11 @@ export const AppRoutes: Routes = [
         },
         children: [
             {
-                path: 'card',
-                component: CardComponent,
+                path: 'applications',
+                component: ApplicationsComponent,
                 data: {
                     breadcrumbs: true,
-                    text: 'Card'
+                    text: 'Applications'
                 }
             },
             {
@@ -37,6 +37,6 @@ export const AppRoutes: Routes = [
             }
         ]
     },
-    { path: '', redirectTo: 'landing', pathMatch: 'full' },
-    { path: '**', redirectTo: 'landing' }
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    { path: '**', redirectTo: 'home' }
 ];
