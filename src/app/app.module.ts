@@ -17,6 +17,7 @@ import { LandingComponent } from './landing/landing.component';
 import { NavComponent } from './nav/nav.component';
 import { TableComponent } from './table/table.component';
 import { initializer } from './utils/app-init';
+import { S3explorerComponent } from './s3explorer/s3explorer.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { initializer } from './utils/app-init';
         TableComponent,
         HomeComponent,
         NavComponent,
-        LandingComponent
+        LandingComponent,
+        S3explorerComponent
     ],
     imports: [
         BrowserModule,

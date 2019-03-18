@@ -6,3 +6,10 @@
     background-size: 120px;
     background-origin: content-box;
 }
+
+.userinfo {
+    color: #fff;
+    display: block;
+    height: 58px;
+    padding-top: 20px;
+}

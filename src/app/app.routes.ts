@@ -3,6 +3,7 @@ import { AppAuthGuard } from './app.authguard';
 import { ApplicationsComponent } from './applications/applications.component';
 import { HomeComponent } from './home/home.component';
 import { LandingComponent } from './landing/landing.component';
+import { S3explorerComponent } from './s3explorer/s3explorer.component';
 import { TableComponent } from './table/table.component';
 
 export const AppRoutes: Routes = [
@@ -25,6 +26,14 @@ export const AppRoutes: Routes = [
                 data: {
                     breadcrumbs: true,
                     text: 'Applications'
+                }
+            },
+            {
+                path: 's3explorer',
+                component: S3explorerComponent,
+                data: {
+                    breadcrumbs: true,
+                    text: 'Explorateur S3'
                 }
             },
             {

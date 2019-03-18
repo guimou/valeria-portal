@@ -1,5 +1,7 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { KeycloakService } from 'keycloak-angular';
+import { KeycloakProfile } from 'keycloak-js';
 import { VerticalNavigationItem } from 'patternfly-ng/navigation/vertical-navigation/vertical-navigation-item';
 import { MessageHistory } from '../common/message-history';
 import { MessageService } from '../common/message.service';
@@ -11,7 +13,7 @@ import { MessageService } from '../common/message.service';
 })
 
 export class NavComponent implements OnInit {
-    username = '';
+    userDetails: KeycloakProfile;
     notifications: any[];
     messageHistory: MessageHistory[];
     navigationItems: VerticalNavigationItem[] = [
@@ -21,9 +23,9 @@ export class NavComponent implements OnInit {
             url: '/home/applications'
         },
         {
-            title: 'Table View',
-            iconStyleClass: 'fa fa-table',
-            url: '/home/table'
+            title: 'Explorateur S3',
+            iconStyleClass: 'fa pficon-storage-domain',
+            url: '/home/s3explorer'
         }
     ];
 
@@ -61,13 +63,14 @@ export class NavComponent implements OnInit {
         }
     }
 
-    constructor(public messageService: MessageService, public router: Router) {
-    }
+    constructor(public messageService: MessageService, public router: Router, private keycloakService: KeycloakService) { }
 
-    ngOnInit(): void {
+    async ngOnInit() {
         this.notifications = this.messageService.get();
 
         this.messageHistory = this.messageService.getHistory();
+
+        this.userDetails = await this.keycloakService.loadUserProfile();
 
         this.handleMobile(window.screen.width);
     }
