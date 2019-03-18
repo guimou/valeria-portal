@@ -11,7 +11,7 @@
     "ng": "node_modules/@angular/cli/bin/ng",
     "scripts": {
         "local": "ng serve --open --host 0.0.0.0 --proxy-config proxy.json",
-        "build": "ng --delete-output-path --prod",
+        "build": "ng build --delete-output-path --prod",
         "buildDev": "ng build --watch",
         "lint": "ng lint",
         "start": "node server.js proxy.json",
