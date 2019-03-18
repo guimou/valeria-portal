@@ -1,0 +1,10 @@
+.illustration {
+    height: 250px;
+    display: block;
+    margin: auto;
+    padding: 15px;
+}
+
+::ng-deep .blank-slate-pf {
+    background-color: #ffffff !important;
+}
